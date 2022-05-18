@@ -46,9 +46,4 @@ tanh <- function(x){
   return (2/ (1 + exp(-2*x)) -1)
 }
 
-# A test function
-# setwd("C:/Users/xshen/Desktop/Reasearch Projects/Neural Network Testing/Simulation/")
-# X_assess <- readRDS("X_assess.RDS")
-# parameters <- readRDS("parameters.RDS")
-# cache <- forward_propagation(X_assess, parameters, "sigmoid")
 
