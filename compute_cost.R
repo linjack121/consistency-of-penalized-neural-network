@@ -46,9 +46,4 @@ compute_cost <- function(A2, Y,
 }
 
 
-# A test function
-# setwd("C:/Users/xshen/Desktop/Reasearch Projects/Neural Network Testing/Simulation/")
-# Y_assess <- readRDS("Y_assess.RDS")
-# parameters <- readRDS("parameters.RDS")
-# A2 <- matrix(c(0.5002307 ,  0.49985831,  0.50023963),1,3)
-# compute_cost(A2, Y_assess, "sigmoid")
+
