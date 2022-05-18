@@ -63,8 +63,4 @@ nn_model <- function(X, Y, n_h, lambda = 0.1, learning_rate = 1.2, activation = 
 #res <- nn_model(X=X,Y=Y,n_h =3, lambda = 0.05, learning_rate = 0.001,activation = "tanh",num_iterations = 1e4, print_cost = TRUE)
 
 
-# A test function
-# setwd("C:/Users/xshen/Desktop/Reasearch Projects/Neural Network Testing/Simulation/")
-# X_assess <- readRDS("X_assess.RDS")
-# Y_assess <- readRDS("Y_assess.RDS") 
-# parameters <- nn_model(X_assess, Y_assess, 4, "sigmoid")
+
