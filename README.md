@@ -1,4 +1,4 @@
-# consistency-of-penalized-neural-network
+# consistency of penalized neural network
 Our goal of this paper is to propose the general framework of neural networks with regularization and prove
 its consistency. Under certain conditions, the estimated neural network will converge
 to true underlying function as the sample size increases. The method of sieves and
