@@ -7,6 +7,7 @@ fiability for the parameters. Two types of activation functions: hyperbolic tang
 function(Tanh) and rectified linear unit(ReLU) have been taken into consideration.
 Simulations have been conducted to verify the validation of theorem of consistency.
 This paper will come out in public soon.
+This is a joint work with Dr. Xiaoxi Shen, an assistan professsor at Texas State University.
 
 
 # how to implement the code
