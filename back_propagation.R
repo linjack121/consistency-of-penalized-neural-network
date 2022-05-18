@@ -72,11 +72,3 @@ back_propagation <- function(parameters, cache, X, Y, lambda,
 
 
 
-# A test function
-# setwd("C:/Users/xshen/Desktop/Reasearch Projects/Neural Network Testing/Simulation/")
-# X_assess <- readRDS("X_assess.RDS")
-# Y_assess <- readRDS("Y_assess.RDS") 
-# parameters <- readRDS("parameters.RDS")
-# cache <- readRDS("cache.RDS")
-# grads <- back_propagation(parameters, cache, X_assess, Y_assess, "sigmoid")
-
