@@ -9,7 +9,7 @@ source("update_parameters.R")
 source("predict.R")
 source("nn_model.R")
 
-#We mainly choose Tanh and ReLu activation function in this project.
+
 
 ###########################################
 # Simulation1:
@@ -49,7 +49,7 @@ for(j in 1:length(n_sample))
   
   
   
-    result_List <- nn_model(X, Y, n_h[i], lambda = 0.5,activation = "tanh",
+    result_List <- nn_model(X, Y, n_h, lambda = 0.5,activation = "tanh",
                                              learning_rate = 0.005, num_iterations = 20000, print_cost = TRUE);
     parameters_fitted <- result_List$parameters;
     # parameters_fitted <- nn_model(X, Y, n_h[i], lambda = 0,  activation = "linear",
@@ -111,15 +111,14 @@ for(j in 1:length(n_sample))
   
 
   
- 
-    result_List <- nn_model(X, Y, n_h[i], lambda = 0.01,activation = "tanh",
+    result_List <- nn_model(X, Y, n_h, lambda = 0.01,activation = "tanh",
                             learning_rate = 0.005, num_iterations = 20000, print_cost = TRUE);
     parameters_fitted <- result_List$parameters;
     # parameters_fitted <- nn_model(X, Y, n_h[i], lambda = 0,  activation = "linear",
     #                               learning_rate = 0.1, num_iterations = 2e4, print_cost = TRUE);
     cache_fitted <- forward_propagation(X, parameters_fitted, activation = "sigmoid");
     Y_fitted <- cache_fitted[["A2"]];
-  
+
   
   error[j] <- (1/n_sample[j]) * sum((Y_fitted - Y_true_sample)^2);
   cost[j] <- result_List$cost;
@@ -188,8 +187,8 @@ for(j in 1:length(n_sample))
   n_h <- c(floor(n_sample[j] ^ (1/4)));
   upper_bound <- 10 * n_sample[j] ^ (1/4);
   
- 
-    result_List <- nn_model(X, Y, n_h[i], lambda = 0.01,activation = "tanh",
+  
+    result_List <- nn_model(X, Y, n_h, lambda = 0.01,activation = "tanh",
                             learning_rate = 0.005, num_iterations = 30000, print_cost = TRUE);
     parameters_fitted <- result_List$parameters;
     # parameters_fitted <- nn_model(X, Y, n_h[i], lambda = 0,  activation = "linear",
